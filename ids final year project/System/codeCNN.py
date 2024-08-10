@@ -8,7 +8,7 @@ from tensorflow.keras.layers import Conv1D, MaxPooling1D, Flatten, Dense
 
 # Load your dataset
 # Replace 'your_dataset.csv' with the actual path to your dataset file
-data = pd.read_csv('/Users/namangupta/Desktop/IDS/System/KDDTrain.csv')
+data = pd.read_csv('/../../../../../KDDTrain.csv')
 
 # Remove single quotes from column names
 data.columns = data.columns.str.strip("'")
