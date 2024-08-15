@@ -1,0 +1,11 @@
+Flask
+Flask-WTF
+pandas
+scikit-learn
+tensorflow
+numpy
+Flask-Bootstrap 
+torch 
+torchvision
+flask-socketio
+scapy
