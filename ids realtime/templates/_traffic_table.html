@@ -1,0 +1,20 @@
+<table style="border-collapse: collapse; width: 100%;">
+    <thead>
+        <tr>
+            <th style="padding: 10px; border-bottom: 2px solid #ddd;">Protocol</th>
+            <th style="padding: 10px; border-bottom: 2px solid #ddd;">Source IP</th>
+            <th style="padding: 10px; border-bottom: 2px solid #ddd;">Source Bytes</th>
+            <th style="padding: 10px; border-bottom: 2px solid #ddd;">Intruder Detected</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for traffic in traffic %}
+        <tr>
+            <td style="padding: 10px; border-bottom: 1px solid #ddd;">{{ traffic.protocol }}</td>
+            <td style="padding: 10px; border-bottom: 1px solid #ddd;">{{ traffic.src }}</td>
+            <td style="padding: 10px; border-bottom: 1px solid #ddd;">{{ traffic.src_bytes }}</td>
+            <td style="padding: 10px; border-bottom: 1px solid #ddd;">{{ 'Yes' if traffic.intruder else 'No' }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
